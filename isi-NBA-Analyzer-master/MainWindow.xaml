@@ -1,0 +1,53 @@
+﻿<Window x:Class="NBA_Analyzer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:NBA_Analyzer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="1300" MinWidth="1300" MinHeight="550" Closed="Window_Closed" Icon="fotos/Logo2.png">
+
+    <Grid x:Name="Grid_Menu" Background="#FFFFCB65">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="181*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="0*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <DockPanel x:Name="ventana" LastChildFill="False" Grid.Row="1" Grid.ColumnSpan="6"/>
+        <Grid Grid.ColumnSpan="6" Background="#FFC43C1E">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="194*"/>
+                <ColumnDefinition Width="193*"/>
+                <ColumnDefinition Width="196*"/>
+                <ColumnDefinition Width="400*"/>
+                <ColumnDefinition Width="85*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Column="4" Margin="0,0,0.4,0.4" >
+                <Label Content="Bienvenido:" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+                <Label x:Name="lbl_nombre_is" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <Label x:Name="lbl_apellidos_is" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                <Label Content="Último acceso:" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+                <Label x:Name="lbl_ultimoInicio_is" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            </StackPanel>
+            <Button x:Name="Jugadores" Grid.Column="1" Content="Jugadores" Margin="19.8,20,19.6,20.4" FontSize="20" SnapsToDevicePixels="True" Foreground="White" Click="Jugadores_Click" BorderBrush="Black" Background="#FFCD6301"/>
+            <Button x:Name="vs_Equipos" Grid.Column="2" Content="VS Equipos" Foreground="White" Margin="20.4,20,20.4,20.4" FontSize="20" BorderBrush="Black" OpacityMask="#FFDCC9C9" Click="vs_Equipos_Click" Background="#FFCD6301"/>
+            <Button x:Name="vs_jugadores" Grid.Column="3" Content="VS Jugadores" Margin="19.6,20,20,20.4" Foreground="White" BorderBrush="Black" FontSize="20" Click="vs_jugadores_Click" Background="#FFCD6301"/>
+            <Image Source="fotos/Logo2.png" Margin="0,0,0.2,0.4"/>
+            <Button x:Name="btn_ayuda" Margin="11.6,10,3.2,16.4" Click="btn_ayuda_Click" Background="{x:Null}" BorderBrush="{x:Null}" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Left" Height="60" Width="70">
+                <Image x:Name="ima_ayuda" Source="fotos/ayuda2.png" ToolTip="Ayuda" HorizontalAlignment="Center" VerticalAlignment="Center" Height="57" Width="69"/>
+            </Button>
+        </Grid>
+
+    </Grid>
+</Window>

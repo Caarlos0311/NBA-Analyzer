@@ -1,0 +1,10 @@
+Para ver la solución en Visual Studio tendrá que hacer doble click en el archivo NBAAnalyzer.sln, y accederá 
+al código fuente. A raíz de ahí podrá ejecutarlo desde Visual Studio desde el botón iniciar.
+El ejecutable se encuentra dentro de la carpeta publish. Debe acceder con doble click e instalarlo. 
+
+Para acceder a la aplicación tendrá que introducir:
+usuario: admin
+contraseña: admin
+
+Si pierde la contraseña o quiere iniciar con un nuevo usuario tendrá que introducir:
+Código de acceso: admin2021admin
